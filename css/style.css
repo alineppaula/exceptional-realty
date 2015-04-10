@@ -195,14 +195,28 @@ section {
 	top: 200px;
 	right: 20px;
 	width: 40px;
-	z-index: 1;
+	z-index: 2;
 }
 
 #social a {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: yellow;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+a.fbook {
+	background: url(../images/facebook42.png) no-repeat;
+}
+
+a.twit {
+	background: url(../images/social136.png) no-repeat;
+}
+
+a.gplus {
+	background: url(../images/google2.png) no-repeat;
 }
 
 footer {
