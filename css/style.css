@@ -23,17 +23,60 @@ figcaption {
    color: white;
    text-shadow: 0 2px 3px #000;
 }
+.shadow {
+	box-shadow: 1px 3px 10px #000;
+	padding-right: 30px;
+}
 
-#logo { /* select elements with id="logo"*/
+.border-right {
+	border-right: 1px dotted #ccc;
+}
+
+.white-wood {
+	background: url(../images/white-wood.jpg) no-repeat center top;
+	background-size: cover;
 	
+}
+
+.ligth-fade {
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */ }
+
+
+
+#logo { 
+	padding: 84px 0 0;
+
 }
 
 #logo h1 { 
 	font-family: "Clicker Script", cursive;
+	text-align: center;
+	margin: 0;
 }
 
 #logo h2 {
 	font-family: "Elsie Swash Caps", cursive;
+	text-align: center;
+	margin: 0;
+}
+
+#details {
+	border-top: 1px solid white;
+}
+
+#details {
+	height: 221px;
+}
+
+#details a:active {
+	color: red;
 }
 
 #details a:hover {
@@ -67,17 +110,17 @@ img, video, audio {
 .col-1 {
 	float:left;
 	width: 32%;
-	background: #ccc;
+	
 }
 
 .col-2 {
 	float: left;
 	width: 66%;
-	background: #ccc;
+	
 }
 
 .col-3 {
-	background: #ccc;
+	
 }
 
 .clearfix:after {
@@ -98,16 +141,53 @@ img, video, audio {
 }
 header {
 	position: fixed;
-	top: 0;
-	left: 0;
+	margin: 0 0 30px;
 	width: 100%;
 	background: #fff;
 	z-index: 1;
 }
 
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+#navbar nav {
+	border-left: 1px solid #ccc;
+}
+
+#navbar nav a {
+	display: inline-block;
+	width: 16.6666667%;
+	margin: 0;
+	padding: 22px 0;
+	text-transform: uppercase;
+	color: black;
+	text-align: center;
+	border-right: 1px solid #ccc;
+	text-decoration: none;
+	font: 1em "Trebuchet MS", Arial, sans-serif;
+}
+
+#navbar nav a.selected {
+	background: #333;
+	color: white;
+}
+
+#navbar nav a:hover {
+	color: white;
+}
+
+
 section {
 	padding: 20px;
 	margin-bottom: 20px;
+	background: white;
 }
 
 #social {
@@ -123,6 +203,14 @@ section {
 	width: 40px;
 	height: 40px;
 	background: yellow;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.75em;
+	padding: 10px;
+	background: #eee;
+	border-top: 1px solid #ccc;
 }
 
 
